@@ -1,0 +1,107 @@
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+orange
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+grape
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+false - 13
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+3,33,31,2,74,89,26,51,49,56,17,12,98,35,63,69,30,8,23,71,14,2,31,59,66,39,12,28,54,62,85,10,1,21,92,32,15,47,65,14,49,62,6,20,47,1,48,44,62,70 + banana
+const randomNumber = getRandomNumber();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const sum = (a, b) => a + b;
+banana
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+55 / 76
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const getUniqueValues = array => [...new Set(array)];
+const greet = name => `Hello, ${name}!`;
+orange
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const findLargestNumber = numbers => Math.max(...numbers);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+66 - false
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const isEven = num => num % 2 === 0;
+
+89 - 20,94,58,65,55,32,23,33,38,22,60,96,88,49
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+function addNumbers(a, b) { return a + b; }
+
+false - orange
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+kiwi
+
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+22 * 69
+const isEven = num => num % 2 === 0;
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+false + apple
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+63 * true
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+console.log(getRandomString());
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+43 + orange
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+kiwi
+
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+banana
+
+console.log(getRandomString());
+const squareRoot = num => Math.sqrt(num);
+orange * 27,98,14,3,78,85,54,41,32,34,33,55,10,29,19,92,49,14,52,64,41,88,59,14,94,59,39,15,10,37,58,66,0,99,5,51,34,10,41,7,74,33,28,5,55,27,85,50,69,47,90,22,53,44,15,40,90,24,11,20,17,94,49,46,11,23,84,68,38,89,41,71,88,75,87
+
+const greet = name => `Hello, ${name}!`;
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+true * kiwi
+
+const getRandomElement = array => array[getRandomIndex(array)];
+true * 9,69,51,57,37,88,20,53,9,42,16,60,93,9,19,79,51,51
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const capitalizeString = str => str.toUpperCase();
+false * 87
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+apple
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+true - 16,65,80,26,20,4,96,57,33,65,88,68,54,43,33,23,68,10,73,75,35,92
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+true + kiwi
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+const getRandomSubset = (array, size) => array.slice(0, size);
