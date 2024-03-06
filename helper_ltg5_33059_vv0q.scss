@@ -1,0 +1,4 @@
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+86 - 46
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const greet = name => `Hello, ${name}!`;
