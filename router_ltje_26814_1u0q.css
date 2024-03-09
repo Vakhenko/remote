@@ -1,0 +1,32 @@
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+kiwi * banana
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+false - 23
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+orange
+
+const removeDuplicates = array => Array.from(new Set(array));
+kiwi + 41,65,13,65,29,75,54,19,22,55,42,16,90,3,68,34,42,9,34,95,72,71,25,85,98,55,25,28,37,50,25,54,13,40,98,76,49,30,22,16,46,60,16,94,99,44,62,2,82,17,40,80,99,56,37,26,7,61,77,31,96,88,99,30,84,23,86,80,60,94,45
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+2,80,40,5,85,73,71,37,46,90,84,80,19,14,90,4,12,3,11,63,11,37,34,80,38,92,57,92,5,1,37,81,55,91,60,44,75,59,52,23,72,17,25,21,30,50,29,18,54,43,86,56,11,80,15,68,94,88,71,73 / false
+const greet = name => `Hello, ${name}!`;
+
+false + 51
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const reverseString = str => str.split("").reverse().join("");
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const reverseString = str => str.split("").reverse().join("");
+banana / 93,72,15,43,48,40,48,41,26,67,35,41,99,38,88,2,1,14,44,47,18,50,50,5,34,60,94,12,40,3,85,38,25,54,83,58,30,91,77,64,74,68,77,85,64,36,37,43,50,10,1,13,98
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+orange
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+97 / kiwi
+const greet = name => `Hello, ${name}!`;
