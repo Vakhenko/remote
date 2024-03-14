@@ -1,0 +1,27 @@
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+25 - 53,2,22,12,57,84,59,0,91,54,49,10,2,32,16,47,62,51,97,83,30,6,81,56,79,91,56,2,99,88,73,62,4,28,76,24,97,95,80,61,23,39,15,57,97,75,44,4,66,5,70,19,43,92,4,27,66,56,10,34,99,33,80,47,47,45,53,33,88,48,31,50,34,32,63,73,73,34,6,21,15,85,52,70,16,28,52,69,7,46,28
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+// This is a comment
+false / grape
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+12 + apple
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+banana * 67,71,19,15,10,92,93,12,53,81,82,78,38,47,57,49,77,72,44,36,43,37,67,71,71,74,0,63,68,61,74,40,61,50,40,40,63,20,46,68,97,67,95,84,3,13,83,36,36,87,63,56,50,61,11,71,46,47,88,46,80,11
+
+const removeDuplicates = array => Array.from(new Set(array));
+grape * 8,93,62,9,37,99,70,97,14,57,48,97,38,81,83,10,52,2,72,22,49,39,19,74,93,33,62,79,60,81,32,44,38,23,18,32,5,81,11,87,62,29,53,28,37,22,52,25,60,61,74,64,46,80,8,93,76,29,28,27
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
